@@ -1,0 +1,254 @@
+body {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  width: 100%;          /* fills the screen on mobile */
+  padding: 0 16px;      /* small side padding */
+  margin: auto;         /* centers when a max-width applies */
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;    /* limits width on tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;    /* limits width on desktop */
+  }
+}
+
+
+
+
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* space between left & right */
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent; /* makes navbar see-through */
+  z-index: 100; /* stays on top */
+}
+
+/* Left side (your name) */
+.nav-left .brand-name {
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #40E0D0;
+}
+
+/* Right side (nav links) */
+.nav-right a {
+  margin-right:90px; /* space between links */
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  
+}
+
+/* Hover effect (optional) */
+.nav-right a:hover {
+  color: #40E0D0; /* or a gold/teal accent */
+  font-size: 20px;
+  transform: translateY(-3px);
+  text-decoration:wavy;
+  font-weight: 600;
+}
+header {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero_container {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:70px 0px;
+  padding:60px;
+  gap: 70px;
+  width:100% ;
+}
+.main-container > div{
+  width: 50%;
+}
+.hero-text {
+  flex: 1;
+  justify-content:left;
+  margin:40px;
+}
+/* Text */
+.main-name { 
+  font-size: 56px;
+  color: #00BFA6; /* accent color, adjust if you want */
+  margin-bottom: 12px;
+}
+/* HERO SECTION */
+.themeColor {
+  color: #00BFA6;  /* your theme color */
+  font-weight: bold;
+}
+
+.para {
+  font-size:2rem;
+  line-height: 1.6;
+  color: #E0E0E0;
+  margin-top: 30px;
+}
+
+.imagediv{
+  justify-content: end;
+  margin-top: 4rem;
+  padding-left: 20px;
+}
+/* Image */
+.hero-image {
+  object-fit: cover;
+  flex-shrink: 0; /* prevent shrinking */
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  padding:4px;
+  display: flex;
+  object-position:50% 10%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* BUTTONS */
+.hero-buttons {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Download button (solid theme) */
+.download-btn {
+  background: #40E0D0;
+  color: #0D0D0D;
+  border: 2px solid #40E0D0;
+}
+
+/* GitHub button (outline style) */
+.github-btn {
+  background: transparent;
+  color: #40E0D0;
+  border: 2px solid #40E0D0;
+}
+
+/* Hover effects */
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Hover color changes */
+.download-btn:hover {
+  background: #2bb8aa;
+  border-color: #2bb8aa;
+  color: #fff;
+}
+
+.github-btn:hover {
+  background: #40E0D0;
+  color: #0D0D0D;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;                      /* thickness of the line */
+  background: #40E0D0;              /* your theme color */
+  margin: 40px 0;                   /* space above and below the line */
+  border-radius: 2px;               /* small rounding (optional) */
+}
+
+
+/* ABOUT SECTION */
+.about {
+ 
+  color: #E0E0E0; /* light text */
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #2bb8aa; /* your theme color */
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+/* LAYOUT */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  padding:6rem;
+}
+
+/* ABOUT TEXT BLOCK */
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* IMAGE STYLES */
+.about-image-div {
+  justify-content: end;
+  
+  padding-left:10rem;
+}
+
+
+.aboutImage{
+  border-radius:50%;
+  object-fit: cover;
+  flex-shrink: 0; /* prevent shrinking */
+  width: 420px;
+  height: 420px;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  margin-left:40px;
+  object-position:50% 17%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
+
+}
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+
+.text{
+  justify-content: flex-start;
+  width:40%;
+  margin-left: 6rem;
+}
